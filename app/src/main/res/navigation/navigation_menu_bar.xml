@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_menu_bar"
+    app:startDestination="@id/barMenuFragment">
+
+    <fragment
+        android:id="@+id/barMenuFragment"
+        android:name="com.example.coffeeapp.fragment.BarMenuFragment"
+        android:label="MENU BAR"
+        tools:layout="@layout/fragment_bar_menu" >
+        <action
+            android:id="@+id/action_barMenuFragment_to_add_drinks"
+            app:destination="@id/add_drinks" />
+        <action
+            android:id="@+id/action_barMenuFragment_to_updateDrinksFragment"
+            app:destination="@id/updateDrinksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_drinks"
+        android:name="com.example.coffeeapp.fragment.AddDrinksFragment"
+        android:label="ADD DRINKS"
+        tools:layout="@layout/fragment_add_drinks" >
+        <action
+            android:id="@+id/action_add_drinks_to_barMenuFragment"
+            app:destination="@id/barMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateDrinksFragment"
+        android:name="com.example.coffeeapp.fragment.UpdateDrinksFragment"
+        android:label="fragment_update_drinks"
+        tools:layout="@layout/fragment_update_drinks" >
+        <action
+            android:id="@+id/action_updateDrinksFragment_to_barMenuFragment"
+            app:destination="@id/barMenuFragment" />
+        <argument
+            android:name="currentDrink"
+            app:argType="com.example.coffeeapp.model.Drink" />
+    </fragment>
+</navigation>

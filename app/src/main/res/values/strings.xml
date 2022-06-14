@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">CoffeeApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="coffee_menu">Coffee menu</string>
+    <string name="title">Title</string>
+    <string name="details">Details</string>
+    <string name="price">Price</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="tiramisu">All the flavor of every gourmet\'s favorite Italian dessert. "Tiramisu" means "take me to heaven!"
+A promise of indulgence that this enchanted, chocolaty Espresso is sure to keep. </string>
+    <string name="matcha">A green tea latte is simply a latte made with green tea instead of espresso. Traditional lattes are a blend of steamed milk and espresso, but in a green tea latte, we remove the coffee
+        and use tea in its place.</string>
+
+    <string name="moca">First chocolate sauce is poured in the bottom and sides of the glass and then espresso and steamed milk are added. All this is topped with a good layer of whipped cream that can be decorated with chocolate sauce,
+        bisquit crumble, nonpareils or anything else sweet.</string>
+
+    <string name="facebook_app_id">109673771232468</string>
+    <string name="fb_login_protocol_scheme">fb109673771232468</string>
+</resources>
